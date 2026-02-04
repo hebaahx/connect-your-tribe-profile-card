@@ -1,50 +1,87 @@
 {% render 'partials/head.liquid' %}
-
-    <article class="profile-card-example">
+    <article class="profile-card">
       
-      <header class="profile-card-example-header">
-        
+      <header class="profile-card-header">
         <h1>{{ person.name }}</h1>
-        
-        <p><em> Frontend Design & Development </em></p>
-        
-        <button class="profile-card-example-button">
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
+        <h2>Frontend Design & Development</h2>
       </header>
   
-<img src="/sajaenik.jpg.jpeg" alt="Foto van Heba" class="profile-card-example-img">
+     <section class="intro"> 
+        <p class="profile-card-intro">
+        Ik ben eerstejaars student Frontend Design & Development aan de Hogeschool van Amsterdam. 
+        Aan het begin van deze opleiding had ik nog geen kennis van coderen.
+        Inmiddels leer ik stap voor stap hoe coderen werkt en welke belangrijke factoren daarbij komen kijken,
+        zoals toegankelijkheid, gebruiksvriendelijkheid en structuur. Tijdens de opleiding ontwikkel ik mij zowel technisch als creatief.
+        </p> 
+      </section>
 
-      <dl class="profile-card-example-dl">
-        <dt>21 jaar</dt>
-        <dd>Amsterdam</dd>
-        
-        <dt>Reizen</dt>
-        <dd>Egypte</dd>
-        
-        <dt>Wandelen</dt>
-        <dd>muziek luisteren</dd>
-      </dl>
-  
-      <p>Ik heb geen voorkennis over het coderen maar ik ben heel nieuwsgierig naar deze opleiding!<br></p>
-      
+      <section class="about-me"> 
+
+        <p class="about-me-title">About me:</p>
+         
+        <ul class="icon-list">
+          <li> 
+            <button popovertarget="photo-amsterdam">
+            <img src="assets/location.svg" alt="Amsterdam" width="23" height="23">
+            </button>
+         </li>
+          
+          <li>
+              <button popovertarget="photo-egypt"> 
+              <img src="assets/egypt.svg" alt="egypt-flag" width="23" height="23">
+              </button>
+          </li>
+
+          <li>
+              <button popovertarget="photo-music">
+              <img src="assets/music.svg" alt="music" width="23" height="23">
+              </button>  
+          </li>
+
+          <li> 
+            <button popovertarget="photo-traveling">
+            <img src="assets/travel.svg" width="23" height="23">
+            </button>
+          </li>
+
+          <li> 
+            <button popovertarget="photo-coding">
+            <img src="assets/coding.svg" width="23" height="23">
+            </button>
+          </li>
+
+        </ul> 
+       </section>
+
+      <div popover id="photo-amsterdam"> 
+        <img src="">
+        <button popovertarget="photo-amsterdam">Sluiten</button>
+      </div>
+
+      <div popover id="photo-egypt">
+        <img src="">
+        <button popovertarget="photo-egypt">Sluiten</button>
+      </div>
+
+      <div popover id="photo-music">
+        <img src="assets/music.jpg">
+        <button popovertarget="photo-music">Sluiten</button>
+      </div>
+
+      <div popover id="photo-traveling">
+        <img src="assets/traveling.jpg">
+        <button popovertarget="photo-traveling">Sluiten</button>
+      </div>
+
+      <div popover id="photo-coding">
+        <img src="">
+        <button popovertarget="photo-coding">Sluiten</button>
+      </div>
+
+       
+
     </article>
 
-    <script src="scripts/script.js"></script>
+<script src="scripts/script.js"></script>
 
 {% render 'partials/foot.liquid' %}

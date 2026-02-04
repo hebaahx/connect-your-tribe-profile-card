@@ -6,8 +6,8 @@ import express from 'express'
 import { Liquid } from 'liquidjs';
 
 
-// Vul hier jouw eigen ID in (zie de instructies in de leertaak)
-const personID = 234
+// eigen id 
+const personID = 263
 
 // Doe een fetch naar een URL op de WHOIS API, ga pas verder als de fetch gelukt is
 const personResponse = await fetch('https://fdnd.directus.app/items/person/' + personID)
