@@ -45,6 +45,11 @@ app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
    response.render('index.liquid', {person: personResponseJSON.data})
 })
+//extra voor oefenen
+app.get('/oefenen', async function (request, response) {
+   response.render('practice.liquid', {person: personResponseJSON.data})
+})
+
 
 // Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
 // Maak daar dan meer Routes voor aan, en koppel ze aan Views

@@ -1,0 +1,19 @@
+<h1>Data-Driven Web</h1>
+<p>Ik ben dus {{ person.name }}</p>
+
+<p>Het is vandaag {{ 'now' | date: '%d-%m-%Y'  }}</p>
+<p>{{ person | json }}</p>
+
+
+<p>Naam in hoofdletters: {{ person.name | upcase }}</p>
+<p>Naam in kleine letters: {{ person.name | downcase }}
+
+<p>Capitalized: {{ person.nickname | capitalize }}</p> <!--eerste letter hoofdletter  -->
+
+<p>Vandaag : {{ 'now' | date: '%d %B %Y' }}</p>
+<p>Vandaag : {{ 'now' | date: '%d-%m-%y' }}</p> <!--korte versie  -->
+
+
+<p>Geboortedatum: {{ person.birthdate | date: '%d-%m-%Y' }}</p>
+
+

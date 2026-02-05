@@ -8,11 +8,11 @@
   
      <section class="intro"> 
         <p class="profile-card-intro">
-        Ik ben eerstejaars student Frontend Design & Development aan de Hogeschool van Amsterdam. 
-        Aan het begin van deze opleiding had ik nog geen kennis van coderen.
-        Inmiddels leer ik stap voor stap hoe coderen werkt en welke belangrijke factoren daarbij komen kijken,
-        zoals toegankelijkheid, gebruiksvriendelijkheid en structuur. Tijdens de opleiding ontwikkel ik mij zowel technisch als creatief.
-        </p> 
+            Ik ben {{ person.name }} of {{ person.nickname | downcase }} ;) eerstejaars student {{ person.bio }} aan de Hogeschool van Amsterdam.
+            Aan het begin van deze opleiding had ik nog geen kennis van coderen.
+            Nu leer ik stap voor stap hoe coderen werkt en hoe ik websites toegankelijk en gestructureerd kan maken.
+        </p>
+       
       </section>
 
       <section class="about-me"> 
@@ -54,27 +54,31 @@
        </section>
 
       <div popover id="photo-amsterdam"> 
-        <img src="">
+        <img src="assets/amsterdam.jpg">
         <button popovertarget="photo-amsterdam">Sluiten</button>
       </div>
 
       <div popover id="photo-egypt">
-        <img src="">
+        <img src="assets/egypt.jpg">
         <button popovertarget="photo-egypt">Sluiten</button>
       </div>
 
       <div popover id="photo-music">
-        <img src="assets/music.jpg">
+        <a href="https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4">
+          <img src="assets/drake.jpg">
+        </a>
         <button popovertarget="photo-music">Sluiten</button>
       </div>
 
       <div popover id="photo-traveling">
-        <img src="assets/traveling.jpg">
+        <img src="assets/travel.jpg">
         <button popovertarget="photo-traveling">Sluiten</button>
       </div>
 
       <div popover id="photo-coding">
-        <img src="">
+        <a href="https://github.com/hebaahx?tab=repositories">
+         <img src="assets/coding.jpg">
+        </a> 
         <button popovertarget="photo-coding">Sluiten</button>
       </div>
 
